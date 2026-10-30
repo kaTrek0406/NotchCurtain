@@ -5,7 +5,9 @@
 ## Установка
 
 ```sh
-brew install --cask kaTrek0406/tap/notch-curtain
+brew tap kaTrek0406/tap
+brew trust kaTrek0406/tap
+brew install --cask notch-curtain
 ```
 
 Если macOS заблокировала локальную сборку с ad-hoc подписью, откройте приложение через Finder: **правый клик → Открыть**. Также можно снять атрибут карантина:
