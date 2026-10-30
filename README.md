@@ -34,7 +34,9 @@ Features that are not implemented are not implied by these screenshots. See [Roa
 Install with Homebrew:
 
 ```sh
-brew install --cask kaTrek0406/tap/notch-curtain
+brew tap kaTrek0406/tap
+brew trust kaTrek0406/tap   # recent Homebrew versions refuse to load third-party taps until trusted
+brew install --cask notch-curtain
 ```
 
 The project does not currently include a signed and notarized release. If macOS blocks a locally built or downloaded ad-hoc signed app, use Finder's **right-click → Open** flow, or remove quarantine from that app:
