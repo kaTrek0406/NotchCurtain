@@ -1,0 +1,15 @@
+"Projects" = "Projects"; "Music" = "Music"; "More" = "More"; "Cancel" = "Cancel";
+"Orca is unavailable" = "Orca is unavailable"; "Coming soon" = "Coming soon"; "This section will be available in a future version." = "This section will be available in a future version.";
+"Pause" = "Pause"; "Play" = "Play"; "No music detected" = "No music detected";
+"working" = "working"; "waiting" = "waiting"; "errors" = "errors"; "Resets %@" = "Resets %@"; "Unknown" = "Unknown";
+"Connecting to Orca…" = "Connecting to Orca…"; "No active agents" = "No active agents"; "Start an agent in Orca to see it here." = "Start an agent in Orca to see it here.";
+"Orca is unavailable. Open Orca to see its terminals." = "Orca is unavailable. Open Orca to see its terminals."; "No Orca terminals" = "No Orca terminals"; "Showing sessions running outside Orca." = "Showing sessions running outside Orca.";
+"Show %lld more terminals ↓" = "Show %lld more terminals ↓"; "OUTSIDE ORCA" = "OUTSIDE ORCA"; "Switch to %@" = "Switch to %@"; "No log" = "No log"; "Now" = "Now"; "%lld min ago" = "%lld min ago";
+"Launch %@" = "Launch %@"; "Launch agent in workspace" = "Launch agent in workspace"; "Open %@, %@ in Orca" = "Open %@, %@ in Orca"; "No recent output" = "No recent output";
+"Terminal details" = "Terminal details"; "Activate Orca and focus terminal" = "Activate Orca and focus terminal"; "Branch" = "Branch"; "Path" = "Path"; "Reason" = "Reason"; "Time unknown" = "Time unknown"; "Just now" = "Just now";
+"Clear context?" = "Clear context?"; "Send /clear to terminal %@?" = "Send /clear to terminal %@?"; "Send /clear" = "Send /clear"; "Command failed" = "Command failed";
+"Terminal" = "Terminal"; "Working" = "Working"; "Waiting" = "Waiting"; "Ready" = "Ready"; "Error" = "Error"; "Media Player" = "Media Player"; "VK Music" = "VK Music";
+"System" = "System"; "English" = "English"; "Russian" = "Russian"; "Enable Orca integration" = "Enable Orca integration"; "Path to orca" = "Path to orca"; "Auto-detect" = "Auto-detect"; "Usage limits" = "Usage limits"; "External agent sessions" = "External agent sessions"; "Economy polling" = "Economy polling"; "Show groups" = "Show groups"; "Hover delay" = "Hover delay"; "Saved" = "Saved";
+"Settings" = "Settings";
+"Settings…" = "Settings…"; "Launch at Login" = "Launch at Login"; "About %@" = "About %@"; "Quit" = "Quit";
+"Claude Code" = "Claude Code"; "Codex" = "Codex"; "Gemini" = "Gemini"; "Cursor Agent" = "Cursor Agent"; "Aider" = "Aider"; "OpenCode" = "OpenCode"; "Copilot CLI" = "Copilot CLI"; "Unknown Artist" = "Unknown Artist";

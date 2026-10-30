@@ -1,0 +1,20 @@
+#!/bin/bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+VERSION="$(cat "$ROOT/VERSION")"
+APP="$ROOT/.build/NotchCurtain.app"
+DIST="$ROOT/dist"
+[[ -d "$APP" ]] || "$ROOT/scripts/build_app.sh"
+mkdir -p "$DIST"
+ZIP="$DIST/NotchCurtain-$VERSION-macos.zip"
+DMG="$DIST/NotchCurtain-$VERSION.dmg"
+rm -f "$ZIP" "$DMG" "$DIST/SHA256SUMS"
+codesign --force --deep --sign - "$APP"
+/usr/bin/ditto -c -k --keepParent "$APP" "$ZIP"
+STAGE="$ROOT/.build/dmg-stage"
+rm -rf "$STAGE"; mkdir -p "$STAGE"
+/usr/bin/ditto "$APP" "$STAGE/NotchCurtain.app"
+ln -s /Applications "$STAGE/Applications"
+hdiutil create -volname NotchCurtain -srcfolder "$STAGE" -ov -format UDZO "$DMG"
+(cd "$DIST" && shasum -a 256 "$(basename "$ZIP")" "$(basename "$DMG")" > SHA256SUMS)
+cat "$DIST/SHA256SUMS"

@@ -1,0 +1,39 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CMake
+        run: brew install cmake
+      - name: Test
+        run: scripts/test.sh
+      - name: Package
+        run: scripts/package.sh
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" dist/NotchCurtain-*-macos.zip dist/NotchCurtain-*.dmg dist/SHA256SUMS --title "${GITHUB_REF_NAME}" --notes-file CHANGELOG.md
+      # Optional notarization template (configure Developer ID certificate and signing first):
+      # - name: Import Developer ID certificate
+      #   env:
+      #     CERT: ${{ secrets.CERT }}
+      #   run: |
+      #     echo "$CERT" | base64 --decode > certificate.p12
+      #     security create-keychain -p "$RUNNER_TEMP/keychain-password" build.keychain
+      #     security import certificate.p12 -k build.keychain -P "$CERT_PASSWORD" -T /usr/bin/codesign
+      # - name: Sign, notarize, and staple
+      #   env:
+      #     APPLE_ID: ${{ secrets.APPLE_ID }}
+      #     TEAM_ID: ${{ secrets.TEAM_ID }}
+      #     APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
+      #   run: |
+      #     codesign --force --deep --options runtime --sign "$DEVELOPER_ID_IDENTITY" .build/NotchCurtain.app
+      #     xcrun notarytool submit dist/NotchCurtain-*.dmg --apple-id "$APPLE_ID" --team-id "$TEAM_ID" --password "$APP_PASSWORD" --wait
+      #     xcrun stapler staple dist/NotchCurtain-*.dmg
+      # Keep all signing credentials in repository secrets; never add real values here.

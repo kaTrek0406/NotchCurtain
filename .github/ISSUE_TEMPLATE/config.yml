@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/kaTrek0406/NotchCurtain/discussions
+    about: Ask questions, share workflows, and discuss ideas with other users.
+  - name: Security Vulnerability Reporting
+    url: https://github.com/kaTrek0406/NotchCurtain/security/advisories/new
+    about: Privately disclose security vulnerabilities.

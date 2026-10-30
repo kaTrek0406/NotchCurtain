@@ -1,0 +1,15 @@
+"Projects" = "Проекты"; "Music" = "Музыка"; "More" = "Ещё"; "Cancel" = "Отмена";
+"Orca is unavailable" = "Orca недоступна"; "Coming soon" = "Скоро"; "This section will be available in a future version." = "Этот раздел появится в будущей версии.";
+"Pause" = "Пауза"; "Play" = "Воспроизвести"; "No music detected" = "Музыка не обнаружена";
+"working" = "работает"; "waiting" = "ожидают"; "errors" = "ошибок"; "Resets %@" = "Сброс %@"; "Unknown" = "Неизвестно";
+"Connecting to Orca…" = "Подключение к Orca…"; "No active agents" = "Нет активных агентов"; "Start an agent in Orca to see it here." = "Запустите агента в Orca, чтобы увидеть его здесь.";
+"Orca is unavailable. Open Orca to see its terminals." = "Orca недоступна. Откройте Orca, чтобы увидеть терминалы."; "No Orca terminals" = "Нет терминалов Orca"; "Showing sessions running outside Orca." = "Показаны сессии вне Orca.";
+"Show %lld more terminals ↓" = "Показать ещё терминалы (%lld) ↓"; "OUTSIDE ORCA" = "ВНЕ ORCA"; "Switch to %@" = "Переключиться в %@"; "No log" = "Нет лога"; "Now" = "Сейчас"; "%lld min ago" = "%lld мин назад";
+"Launch %@" = "Запустить %@"; "Launch agent in workspace" = "Запустить агента в рабочей папке"; "Open %@, %@ in Orca" = "Открыть %@, %@ в Orca"; "No recent output" = "Нет недавнего вывода";
+"Terminal details" = "Подробности терминала"; "Activate Orca and focus terminal" = "Активировать Orca и выбрать терминал"; "Branch" = "Ветка"; "Path" = "Путь"; "Reason" = "Причина"; "Time unknown" = "Время неизвестно"; "Just now" = "Только что";
+"Clear context?" = "Очистить контекст?"; "Send /clear to terminal %@?" = "Отправить /clear в терминал %@?"; "Send /clear" = "Отправить /clear"; "Command failed" = "Команда не выполнена";
+"Terminal" = "Терминал"; "Working" = "Работает"; "Waiting" = "Ждёт"; "Ready" = "Готово"; "Error" = "Ошибка"; "Media Player" = "Медиаплеер"; "VK Music" = "VK Музыка";
+"System" = "Системный"; "English" = "English"; "Russian" = "Русский"; "Enable Orca integration" = "Включить интеграцию Orca"; "Path to orca" = "Путь к orca"; "Auto-detect" = "Найти автоматически"; "Music" = "Музыка"; "Usage limits" = "Лимиты"; "External agent sessions" = "Внешние сессии агентов"; "Economy polling" = "Экономия энергии"; "Show groups" = "Показывать группы"; "Hover delay" = "Задержка наведения"; "Saved" = "Сохранено";
+"Settings" = "Настройки";
+"Settings…" = "Настройки…"; "Launch at Login" = "Запуск при входе"; "About %@" = "О программе %@"; "Quit" = "Завершить";
+"Claude Code" = "Claude Code"; "Codex" = "Codex"; "Gemini" = "Gemini"; "Cursor Agent" = "Cursor Agent"; "Aider" = "Aider"; "OpenCode" = "OpenCode"; "Copilot CLI" = "Copilot CLI"; "Unknown Artist" = "Неизвестный исполнитель";

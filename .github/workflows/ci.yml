@@ -1,0 +1,15 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CMake
+        run: brew install cmake
+      - name: Test
+        run: scripts/test.sh
+      - name: Build app
+        run: scripts/build_app.sh
+      - name: Privacy check
+        run: scripts/privacy_check.sh

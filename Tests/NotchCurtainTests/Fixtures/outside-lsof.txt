@@ -1,0 +1,6 @@
+p101
+fcwd
+n/Users/me/sample-project
+p102
+fcwd
+n/Users/me/other-project

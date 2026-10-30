@@ -1,0 +1,50 @@
+{
+  "id": "sanitized-live-orca-capture",
+  "ok": true,
+  "result": {
+    "terminals": [
+      {
+        "handle": "term_fixture_0",
+        "worktreePath": "/Users/example/Workspace-A",
+        "title": "Claude terminal 1",
+        "connected": true,
+        "writable": true,
+        "lastOutputAt": 1793269408217,
+        "preview": "[redacted output]",
+        "agentIdentity": "claude"
+      },
+      {
+        "handle": "term_fixture_2",
+        "worktreePath": "/Users/example/Workspace-A",
+        "title": "Hermes terminal 2",
+        "connected": true,
+        "writable": true,
+        "lastOutputAt": 1793266168713,
+        "preview": "ready [redacted output]",
+        "agentIdentity": "hermes"
+      },
+      {
+        "handle": "term_fixture_3",
+        "worktreePath": "/Users/example/Workspace-B",
+        "title": "Codex terminal 3",
+        "connected": true,
+        "writable": true,
+        "lastOutputAt": 1793267589226,
+        "preview": "[redacted output]",
+        "agentIdentity": "codex"
+      },
+      {
+        "handle": "term_fixture_4",
+        "worktreePath": "/Users/example/Workspace-B",
+        "title": "Antigravity terminal 4",
+        "connected": true,
+        "writable": true,
+        "lastOutputAt": 1793262770820,
+        "preview": "[redacted output]",
+        "agentIdentity": "antigravity"
+      }
+    ],
+    "totalCount": 4,
+    "truncated": false
+  }
+}

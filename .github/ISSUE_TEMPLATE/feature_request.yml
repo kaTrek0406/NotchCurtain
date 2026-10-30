@@ -1,0 +1,38 @@
+name: Feature Request
+description: Propose a new feature, agent integration, or improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+          Please keep in mind the project design philosophy: restrained native UI, measured CPU efficiency, and no telemetry.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem or workflow friction?
+      placeholder: "I find it difficult to track..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see implemented.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe any alternative solutions or features you considered.
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Criteria Check
+      options:
+        - label: This feature maintains zero telemetry and operates fully locally.
+          required: true
+        - label: This feature respects idle battery life and does not require constant CPU polling.
+          required: true

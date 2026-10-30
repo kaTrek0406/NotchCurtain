@@ -1,0 +1,7 @@
+  PID  PPID ELAPSED  %CPU COMMAND
+  101   100   02:12   0.3 claude --resume abc
+  102   100   00:40   4.1 /opt/homebrew/bin/codex --no-daemon
+  103   100   01:01   1.0 codex-code-mode-host --ipc
+  104   100   00:12   0.2 python /Users/me/.claude/mcp-servers/server.py
+  105   100   00:20   0.2 /Applications/Claude.app/Contents/MacOS/claude-agent-view
+  106   100   00:10   0.2 chrome-native-host --connect

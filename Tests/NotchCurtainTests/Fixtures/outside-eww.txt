@@ -1,0 +1,3 @@
+  PID TTY      STAT   TIME COMMAND
+  101 ??       S      0:01 claude ORCA_TERMINAL_HANDLE=term_abc
+  102 ??       S      0:01 codex PATH=/usr/bin
